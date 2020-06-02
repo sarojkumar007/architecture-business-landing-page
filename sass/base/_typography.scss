@@ -1,0 +1,83 @@
+.heading{
+    text-transform: uppercase;
+    font-family: $font-1;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    color: var(--color-white);
+
+    &-soft{
+        text-transform: uppercase;
+        font-family: $font-1;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        color: var(--color-white);
+    }
+}
+
+.heading-secondary{
+    text-align: center;
+    & > span{
+        font-family: $font-1;
+        display: block;
+        text-transform: uppercase;
+        line-height: 1;
+        text-align: center;
+    }
+    &--sub{
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: var(--color-primary);
+        letter-spacing: 5px;
+    }
+    &--main{
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 1.2 !important;
+        letter-spacing: 1px;
+    }
+}
+
+.heading-testimonials{
+    text-align: center;
+    & > span{
+        font-family: $font-1;
+        display: block;
+        text-transform: uppercase;
+        line-height: 1;
+        text-align: center;
+    }
+    &--sub{
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: var(--color-white);
+        letter-spacing: 5px;
+    }
+    &--main{
+        font-weight: 700;
+        font-size: 4.4rem;
+        line-height: 1.2 !important;
+        letter-spacing: 2px;
+        color: var(--color-white);
+    }
+}
+.heading-footer{
+    font-family: $font-1;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.heading-design{
+    display: block;
+    width: 5rem;
+    height: 2.1rem;
+    margin: 1rem auto 0;
+    text-align: center;
+}
+.para{
+    font-size: 1.4rem;
+    text-align: center;
+    letter-spacing: 1px;
+}

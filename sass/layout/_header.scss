@@ -1,0 +1,37 @@
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eee;
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+
+    &__info{
+        background-color: rgba($color-primary,.85);
+        width: 52rem;
+        min-height: 30rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 7rem 5rem 5rem;
+        -webkit-clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+
+        @include respond(phone){
+            width: 39rem;
+        }
+
+        & > p,& > h1 {
+            line-height: 1.1;
+        }
+
+        &--title{
+            margin-right: 30%;
+        }
+        &--cta{
+            display: inline-block;
+            line-height: 1;
+            margin-top: 1.5rem;
+        }
+    }
+}

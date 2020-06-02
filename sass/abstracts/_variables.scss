@@ -1,0 +1,21 @@
+//
+:root{
+    --color-primary-text: #ffde7d;
+    --color-primary: #ffc93c;
+    --color-white: #f6f6f6;
+    --color-black: #212121;
+    --color-grey: #3a4750;
+    --swiper-theme-color: #ffc93c;
+}
+
+$color-primary: #ffc93c;
+$color-black: #303841;
+
+$font-1: "Work Sans", sans-serif;
+$font-2: "Rokkitt", serif;
+
+$grad-color-orange: #EE5522;
+$grad-color-yellow: #FFBB33;
+
+$l-grad: linear-gradient(to right, $grad-color-orange, $grad-color-yellow);
+$l-grad-2: linear-gradient(to left, rgba($grad-color-orange,.3), rgba($grad-color-yellow,.3));

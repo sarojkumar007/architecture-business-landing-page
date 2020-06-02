@@ -1,0 +1,85 @@
+.navigation{
+	position: fixed;
+	top: 0;
+	z-index: 2000;
+	box-shadow: 0 1rem 2rem rgba($color-black, .3);
+	width: calc(100% - 6rem);
+	min-height: 7rem;
+	padding: 1rem 4rem 1rem 2rem;
+	background-color: var(--color-black);
+	color: var(--color-white);
+	margin: 1rem 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	@include respond(tab){
+		flex-wrap: wrap;
+	}
+
+	&__brand{
+		flex: 0 0 15rem;
+		font-size: 2.5rem;
+		padding: 1rem 0;
+		font-family: $font-1;
+		font-weight: 600;
+		line-height: 1;
+		& > span{
+			color: #ff0000;
+		}
+	}
+	&__mobile-btn {
+		display: none;
+		& > label{
+			display: inline-block;
+		}
+		svg{
+			width: 3rem;
+			height: 3rem;
+			transform: rotate(-90deg);
+			cursor: pointer;
+			transition: all .3s;
+		}
+
+		@include respond(tab){
+			display: inline-flex;
+		}
+	}
+	&__list{
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		transition: height .3s, margin-top .3s;
+
+		@include respond(tab){
+			height: 0;
+			flex: 0 0 100%;
+			flex-wrap: wrap;
+		}
+
+		& > a {
+			display: inline-block;
+			padding: 1rem 0 1rem 1rem;
+			margin-right: 1rem;
+			font-size: 2rem;
+			text-decoration: none;
+			color: var(--color-white);
+			transition: color .3s;
+
+			&:hover{
+				color: var(--color-primary);
+			}
+			
+			@include respond(tab){
+				flex: 0 0 100%;
+				text-align: right;
+			}
+		}
+	}
+
+	&__input:checked ~ &__list{
+		border-top: 1px solid var(--color-grey);
+		height: 25.5rem;
+		margin-top: 1rem;
+	}
+}
