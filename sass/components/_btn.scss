@@ -12,11 +12,13 @@
 	border-radius: 10rem;
 	text-align: center;
 	min-width: 18rem;
-	transition: transform .3s;
+	transition: all .3s;
 
-	&:hover{
+	&:hover,&:focus{
+		background-color: var(--color-white);
+		color: var(--color-black);
 		transform: translateY(-2px);
-		box-shadow: 0 .25rem .5rem rgba($color-black,.2);
+		box-shadow: 0 .25rem .5rem rgba(90,90,90,.2);
 	}
 	&:active{
 		transform: translateY(0);
@@ -31,17 +33,18 @@
 	width: 18rem;
 	margin: 0 auto;
 	padding: 1.5rem 1.7rem 1.4rem;
-	background-color: var(--color-black);
+	background-color: rgba(55,55,55,1);
 	color: var(--color-white);
 	text-align: center;
 	font-size: 1.4rem;
 	font-weight: 400;
 	border-radius: 10rem;
 	box-shadow: 0 .1rem .2rem rgba($color-black,.5);
-	transition: transform .3s, box-shadow .3s;
+	transition: all .3s;
 	backface-visibility: hidden;
 
 	&:hover,&:focus{
+		background-color: var(--color-black);
 		transform: translateY(-2px);
 		box-shadow: 0 .5rem 1rem rgba($color-black,.3);
 	}
@@ -57,17 +60,18 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	padding: 1.3rem 2rem 1.2rem;
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-text);
 	color: var(--color-black);
 	text-align: center;
 	font-size: 1.4rem;
 	font-weight: 400;
 	border-radius: 10rem;
 	box-shadow: 0 .1rem .2rem rgba($color-black,.5);
-	transition: transform .3s, box-shadow .3s;
+	transition: all .3s;
 	backface-visibility: hidden;
 
 	&:hover,&:focus{
+		background-color: var(--color-primary);
 		transform: translateY(-2px);
 		box-shadow: 0 .5rem 1rem rgba($color-black,.3);
 	}

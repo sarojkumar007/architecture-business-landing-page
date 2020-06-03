@@ -28,7 +28,7 @@
         margin-top: 1rem;
         line-height: 1.2;
 
-        &:hover{
+        &:hover,&:focus{
           color: var(--color-primary);
         }
       }
@@ -43,7 +43,7 @@
             margin-right: 2rem;
           }
 
-          &:hover{
+          &:hover,&:focus{
             text-decoration: none;
             border: none;
             transform: scale(1.15);
@@ -77,7 +77,7 @@
     text-decoration: none;
     color: var(--color-white);
     transition: color .3s;
-    &:hover{
+    &:hover,&:focus{
       text-decoration: none;
       color: var(--color-primary);
     }
