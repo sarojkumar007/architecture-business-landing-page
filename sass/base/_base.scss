@@ -31,16 +31,22 @@ button{
     user-select: none;
 }
 
-::-moz-selection {
-    background-color: #FF8B24;
-    color: var(--color-white);
+// ::-moz-selection {
+//     background-color: #FF8B24;
+//     color: var(--color-white);
+// }
+
+// ::selection {
+//     background-color: #FF8B24;
+//     color: var(--color-white);
+// }
+
+// CSS for Offsetting
+
+:target::before {
+  content: "";
+  display: block;
+  height: 11rem; /* fixed header height*/
+  margin: -11rem 0 0; /* negative fixed header height */
 }
-
-::selection {
-    background-color: #FF8B24;
-    color: var(--color-white);
-}
-
-
-
 

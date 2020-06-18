@@ -2,9 +2,16 @@
     width: 100%;
     min-height: 100vh;
     background-color: #eee;
-    background: url(../images/bg.jpg) no-repeat center;
+    background: url(../images/bg.jpeg) no-repeat center;
     background-size: cover;
     position: relative;
+
+    @include respond(tab){
+        min-height: 90vh;
+    }
+    @include respond(phone){
+        min-height: 75vh;
+    }
 
     &__info{
         background-color: rgba($color-primary,.85);
@@ -19,6 +26,7 @@
 
         @include respond(phone){
             width: 39rem;
+            padding: 5rem 3rem 3rem;
         }
 
         & > p,& > h1 {

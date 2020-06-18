@@ -30,19 +30,35 @@
 		box-shadow: 0 .5rem 1rem rgba($color-black, .2);
 
 		&--1{
-			background: url(../images/card1.jpg) no-repeat center;
+			background: url(../images/card1.jpeg) no-repeat center;
 			background-size: cover;
 		}
 		&--2{
-			background: url(../images/card2.jpg) no-repeat center;
+			background: url(../images/card2.jpeg) no-repeat center;
 			background-size: cover;
 		}
 		&--3{
-			background: url(../images/card3.jpg) no-repeat center;
+			background: url(../images/card3.jpeg) no-repeat center;
 			background-size: cover;
 		}
 		&--4{
-			background: url(../images/card4.jpg) no-repeat center;
+			background: url(../images/card4.jpeg) no-repeat center;
+			background-size: cover;
+		}
+		&--5{
+			background: url(../images/card5.jpeg) no-repeat center;
+			background-size: cover;
+		}
+		&--6{
+			background: url(../images/card6.jpeg) no-repeat center;
+			background-size: cover;
+		}
+		&--7{
+			background: url(../images/card7.jpeg) no-repeat center;
+			background-size: cover;
+		}
+		&--8{
+			background: url(../images/card8.jpeg) no-repeat center;
 			background-size: cover;
 		}
 	}

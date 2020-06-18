@@ -38,13 +38,13 @@ section, header, main, footer {
 button {
   user-select: none; }
 
-::-moz-selection {
-  background-color: #FF8B24;
-  color: var(--color-white); }
-
-::selection {
-  background-color: #FF8B24;
-  color: var(--color-white); }
+:target::before {
+  content: "";
+  display: block;
+  height: 11rem;
+  /* fixed header height*/
+  margin: -11rem 0 0;
+  /* negative fixed header height */ }
 
 .heading {
   text-transform: uppercase;
@@ -127,6 +127,9 @@ button {
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round; }
+
+.i-s2 {
+  fill: var(--color-primary); }
 
 .i-white {
   stroke: var(--color-white); }
@@ -229,16 +232,28 @@ button {
   position: relative;
   box-shadow: 0 0.5rem 1rem rgba(48, 56, 65, 0.2); }
   .project-card--1 {
-    background: url(../images/card1.jpg) no-repeat center;
+    background: url(../images/card1.jpeg) no-repeat center;
     background-size: cover; }
   .project-card--2 {
-    background: url(../images/card2.jpg) no-repeat center;
+    background: url(../images/card2.jpeg) no-repeat center;
     background-size: cover; }
   .project-card--3 {
-    background: url(../images/card3.jpg) no-repeat center;
+    background: url(../images/card3.jpeg) no-repeat center;
     background-size: cover; }
   .project-card--4 {
-    background: url(../images/card4.jpg) no-repeat center;
+    background: url(../images/card4.jpeg) no-repeat center;
+    background-size: cover; }
+  .project-card--5 {
+    background: url(../images/card5.jpeg) no-repeat center;
+    background-size: cover; }
+  .project-card--6 {
+    background: url(../images/card6.jpeg) no-repeat center;
+    background-size: cover; }
+  .project-card--7 {
+    background: url(../images/card7.jpeg) no-repeat center;
+    background-size: cover; }
+  .project-card--8 {
+    background: url(../images/card8.jpeg) no-repeat center;
     background-size: cover; }
 
 .project-desc {
@@ -370,9 +385,15 @@ button {
   width: 100%;
   min-height: 100vh;
   background-color: #eee;
-  background: url(../images/bg.jpg) no-repeat center;
+  background: url(../images/bg.jpeg) no-repeat center;
   background-size: cover;
   position: relative; }
+  @media screen and (max-width: 850px) {
+    .header {
+      min-height: 90vh; } }
+  @media screen and (max-width: 575px) {
+    .header {
+      min-height: 75vh; } }
   .header__info {
     background-color: rgba(255, 201, 60, 0.85);
     width: 52rem;
@@ -385,7 +406,8 @@ button {
     clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%); }
     @media screen and (max-width: 575px) {
       .header__info {
-        width: 39rem; } }
+        width: 39rem;
+        padding: 5rem 3rem 3rem; } }
     .header__info > p, .header__info > h1 {
       line-height: 1.1; }
     .header__info--title {
@@ -467,10 +489,11 @@ button {
   max-width: 60rem;
   min-height: 50vh;
   margin: 0 auto;
-  padding: 5rem;
+  padding: 0 5rem 5rem;
   text-align: center; }
   .about__icons {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    margin-top: 5rem; }
     .about__icons svg {
       width: 5rem;
       height: 5rem;
@@ -493,7 +516,7 @@ button {
 .testmonials {
   min-height: 50vh;
   margin-top: 4rem;
-  background-image: linear-gradient(to right, rgba(48, 56, 65, 0.8), rgba(48, 56, 65, 0.8)), url(../images/card2.jpg);
+  background-image: linear-gradient(to right, rgba(48, 56, 65, 0.8), rgba(48, 56, 65, 0.8)), url(../images/testimonial_bg.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -509,8 +532,7 @@ button {
 
 .services {
   min-height: 50vh;
-  width: 100%;
-  padding-top: 3rem; }
+  width: 100%; }
   .services__nav {
     display: flex;
     justify-content: center;
@@ -541,7 +563,7 @@ button {
     margin: 5rem;
     min-height: 50vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: auto;
     gap: 3rem;
     justify-content: center; }
@@ -551,9 +573,11 @@ button {
     .services__details--img {
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      height: 50vh; }
       .services__details--img img {
-        height: 100%; }
+        height: 100%;
+        max-width: 100%; }
     .services__details--info {
       font-size: 1.7rem;
       padding-right: 2rem; }
