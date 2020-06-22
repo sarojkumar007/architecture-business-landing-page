@@ -423,7 +423,6 @@ button {
   z-index: 2000;
   box-shadow: 0 1rem 2rem rgba(48, 56, 65, 0.3);
   width: calc(100% - 6rem);
-  min-height: 7rem;
   padding: 1rem 4rem 1rem 2rem;
   background-color: var(--color-black);
   color: var(--color-white);
@@ -436,17 +435,15 @@ button {
       flex-wrap: wrap; } }
   .navigation__brand {
     flex: 0 0 15rem;
-    font-size: 2.5rem;
     padding: 1rem 0;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
-    line-height: 1; }
-    .navigation__brand > span {
-      color: #ff0000; }
+    line-height: 1;
+    align-self: center; }
   .navigation__mobile-btn {
     display: none; }
     .navigation__mobile-btn > label {
-      display: inline-block; }
+      display: inline-flex; }
     .navigation__mobile-btn svg {
       width: 3rem;
       height: 3rem;
@@ -484,6 +481,20 @@ button {
     border-top: 1px solid var(--color-grey);
     height: 25.5rem;
     margin-top: 1rem; }
+
+.brand__head {
+  display: block;
+  font-size: 4rem;
+  line-height: .8;
+  text-transform: uppercase;
+  letter-spacing: 4px; }
+
+.brand__sub {
+  display: block;
+  font-size: 1.3rem;
+  letter-spacing: 1px; }
+  .brand__sub > span {
+    color: red; }
 
 .about {
   max-width: 60rem;
